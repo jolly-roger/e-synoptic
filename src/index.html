@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="eSynoptic">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>E-Synoptic</title>
+        
+        <link href="index.css" rel="stylesheet">
+        
+        <script type="text/javascript" src="index.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <nav class="navbar navbar-inverse">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">E-Synoptic</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="container layout">
+            <div ng-controller="cities" class="cities center-block">
+                <city ng-repeat="(key, value) in cities"></city>
+            </div>
+            <div class="city-forecast center-block" id="container">
+                <div id="loading" class="note text-center">
+                    <h3>Please, select a city.</h3>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

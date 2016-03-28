@@ -1,0 +1,14 @@
+[
+    {
+        "name": "London",
+        "countryCode": "uk"
+    },
+    {
+        "name": "Paris",
+        "countryCode": "fr"
+    },
+    {
+        "name": "Berlin",
+        "countryCode": "de"
+    }
+]

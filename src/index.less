@@ -1,0 +1,24 @@
+@import 'styles/city.less';
+@import (inline) '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+.layout{
+    .cities {
+        display: flex;
+        flex-direction: row;
+        width: 640px;
+        
+        & > city:not(:last-child){
+            margin-right: 20px;
+        }
+    }
+    
+    .city-forecast{
+        width: 800px;
+        height: 310px;
+        margin-top: 20px;
+        
+        .note {
+            margin-top: 100px;
+        }
+    }
+}
